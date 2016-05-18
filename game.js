@@ -14,7 +14,7 @@ sprite.position.x = 200;
 sprite.position.y = 200;
 
 stage.addChild(sprite);
-/*function keyboard(keyCode) {
+function keyboard(keyCode) {
   var key = {};
   key.code = keyCode;
   key.isDown = false;
@@ -30,21 +30,21 @@ stage.addChild(sprite);
     }
   event.preventDefault();
 };
-*/
-/*function move_forward()
+
+function move_forward()
 {
   requestAnimationFrame(move_forward);
   sprite.position.y -=1;
   renderer.render(stage);
-}*/
+}
 function animate()
 {
   requestAnimationFrame(animate);
-  sprite.rotation +=1;
+  sprite.rotation += 5;
   renderer.render(stage);
 }
-/*if(keyboard(38).isDown)
+if(keyboard(38).isDown)
 (
     move_forward();
-)*/
+)
 animate();
