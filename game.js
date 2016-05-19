@@ -4,6 +4,7 @@ gameport.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
 var texture = PIXI.Texture.fromImage("cs413.png");
+var mordor = PIXI.Texture.fromImage("mordor.png");
 var player = new PIXI.Sprite(texture);
 player.anchor.x = 0.5;
 player.anchor.y = 0.5;
